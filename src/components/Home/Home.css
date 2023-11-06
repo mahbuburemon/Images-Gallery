@@ -1,43 +1,48 @@
-.image{
+/* .image{
     width: 100%;
     height: 137px;
-}
+} */
 .react-beautiful-dnd-draggable {
     transition: transform 0.2s;
   }
 
-  /* image hover */
-  .middle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-    visibility: hidden;
+/*checkbox /hover */
+.common_overlay {
+  position: absolute;
+  /* top: 0;
+  left: -110px; */
+  
+  /* background-color: aliceblue; */
+  border-radius: 20px;
+  visibility: hidden;
+}
+.card:hover .image {
+  opacity: 0.3;
+  background-color: rgb(135, 139, 139);
+
 }
 
-  .card:hover .image {
-    opacity: 0.3;
-    background-color: rgb(5, 233, 233);
-  
-  }
-  
-  .card:hover .middle {
-    opacity: 1;
-   
-  }
-/* checkbox */
+
+.column{
+  position: relative;  
+}
+
 .checkbox{
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;  
+ 
+  
+}
+.card:hover .common_overlay{
+  visibility: visible;
+}
+.checkbox:hover .common_overlay{
+  visibility: visible;
 }
 
-.checkbox:hover::after{
-    visibility: visible;
-}
-.card:hover .middle{
-    visibility: visible;
-}
+
+
+
+
 
 
